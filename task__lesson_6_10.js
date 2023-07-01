@@ -58,7 +58,7 @@ const strFive = `#3
 
 const regexpStepOne = /(^|\s)(в|без|до|для|за|через|над|по|из|у|около|под|о|про|на|к|перед|при|с|между)\s/gi
 const regexpFiveStepTwo = /©/gi;
-const regexpFiveStepThre = /#|№/gi;
+const regexpFiveStepThre = /(?<=&)(#|№)/gi;
 const regexpFiveStepFour = /\s-\s/gi;
 const regexpFiveStepFive = /«|(?<=\s)"/gi;
 const regexpFiveStepSix = /»|(?<=\S)"/gi;
