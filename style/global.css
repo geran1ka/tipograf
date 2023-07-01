@@ -32,10 +32,10 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   font-family: Inter, sans-serif;
-  font-size: 12px;
-  line-height: calc(15/12);
-  color: var(--second-color, #6e6893);
-  background-color: var(--second-bg-color, #f4f2ff);
+  font-size: 16px;
+  line-height: 130%;
+  color: #6e6893;
+  background-color: #f4f2ff;
 }
 
 img, svg {

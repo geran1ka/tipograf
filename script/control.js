@@ -4,8 +4,10 @@ export const control = (form, textarea, button) => {
   form.addEventListener('input', () => {
     if (textarea.value.length > 0) {
       button.removeAttribute('disabled');
+      button.style['pointer-events'] = 'fill'
     } else {
-      button.setAttribute('disabled', 'disabled')
+      button.setAttribute('disabled', 'disabled');
+      button.style['pointer-events'] = 'none'
     }
   })
 
