@@ -19,12 +19,11 @@ export const createSection = () => {
     id: 'form',
   });
 
-  const textarea = createElement('textarea', {
+  const textarea = createElement('input', {
     className: 'form__textarea',
     id: 'tipograff',
     name: 'tipograff',
-    cols: 30,
-    rows: 15,
+    type: 'email',
   });
 
   const button = createElement('button', {

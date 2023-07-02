@@ -1,14 +1,9 @@
 import {getTipedText} from "./getTipedText.js";
 export const control = (form, textarea, button) => {
 
-  form.addEventListener('input', () => {
-    if (textarea.value.length > 0) {
-      button.removeAttribute('disabled');
-      button.style['pointer-events'] = 'fill'
-    } else {
-      button.setAttribute('disabled', 'disabled');
-      button.style['pointer-events'] = 'none'
-    }
+  textarea.addEventListener('input', ({target}) => {
+    target.value = target.value.replace(/[^\w\d@"-_.!~*']+/gi, '')
+
   })
 
   form.addEventListener('submit', (e) => {
